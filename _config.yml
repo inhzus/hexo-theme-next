@@ -131,7 +131,7 @@ seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with BASE64 encrypt & decrypt.
 exturl: false
@@ -513,13 +513,14 @@ pangu: false
 # Dependencies: https://github.com/theme-next/theme-next-quicklink
 # Visit https://github.com/GoogleChromeLabs/quicklink for details
 quicklink:
-  enable: false
+  enable: true
 
   # Quicklink (quicklink.umd.js script) is loaded on demand
   # Add `quicklink: true` in Front Matter of the page or post you need
   # Home page and archive page can be controlled through home and archive options below
   home: true
   archive: true
+  tag: true
 
   # Default (true) will initialize quicklink after the load event fires
   delay: true
@@ -669,7 +670,7 @@ needmoreshare2:
 # Google Adsense
 # See: https://www.google.com/adsense
 google_adsense:
-  google_ad_client:
+  google_ad_client: ca-pub-3069366247624911
   enable_page_level_ads: true
 
 # Google Webmaster tools verification setting
@@ -739,7 +740,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: 9lvb4giXLVQgnMVTQ3jM9OHp-gzGzoHsz
   app_key: yEcCwkT5neQVr9W89CtYbsdo
   show_index: false
@@ -763,7 +764,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: enable
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -778,7 +779,7 @@ busuanzi_count:
 #tencent_mta:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
@@ -1059,14 +1060,14 @@ vendors:
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-three
   # Example:
-  # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
-  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
-  # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
-  # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
-  three:
-  three_waves:
-  canvas_lines:
-  canvas_sphere:
+  three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
+  three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
+  canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
+  canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
+  # three:
+  # three_waves:
+  # canvas_lines:
+  # canvas_sphere:
 
   # Internal version: 1.0.0
   # See: https://github.com/zproo/canvas-ribbon
@@ -1077,9 +1078,9 @@ vendors:
   # Internal version: 3.3.0
   # See: https://github.com/ethantw/Han
   # Example:
-  # han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css
+  han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css
   # han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  han:
+  # han:
 
   # Internal version: 4.0.7
   # See: https://github.com/vinta/pangu.js
@@ -1091,8 +1092,8 @@ vendors:
   # Internal version: 1.0.0
   # See: https://github.com/GoogleChromeLabs/quicklink
   # Example:
-  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  quicklink:
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+  # quicklink:
 
   # Internal version: 1.0.0
   # See: https://github.com/revir/need-more-share2

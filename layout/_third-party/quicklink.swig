@@ -15,7 +15,13 @@
       {% set loadQL = true %}
     {% endif %}
   {% endif %}
-  
+
+  {% if is_tag() %}
+    {% if theme.quicklink.tag %}
+      {% set loadQL = true %}
+    {% endif %}
+  {% endif %}
+
   {% if loadQL or (page.quicklink or post.quicklink) %}
     <script src="{{ quicklink_uri }}"></script>
     <script>

@@ -113,14 +113,14 @@
     fastclick: {{ theme.fastclick }},
     lazyload: {{ theme.lazyload }},
     tabs: {{ theme.tabs.enable }},
-    motion: {{ theme.motion | json_encode }},
+    motion: {{ theme.motion | json_encode }}{% if theme.algolia_search.enable %},
     algolia: {
       applicationID: '{{ theme.algolia.applicationID }}',
       apiKey: '{{ theme.algolia.apiKey }}',
       indexName: '{{ theme.algolia.indexName }}',
       hits: {{ theme.algolia_search.hits | json_encode }},
       labels: {{ theme.algolia_search.labels | json_encode }}
-    }
+    }{% endif %}
   };
 </script>
 
