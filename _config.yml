@@ -666,6 +666,12 @@ needmoreshare2:
       position: middleRight
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
 
+# Google Adsense
+# See: https://www.google.com/adsense
+google_adsense:
+  google_ad_client:
+  enable_page_level_ads: true
+
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters
 #google_site_verification:
