@@ -121,12 +121,3 @@
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
 </body>
-{% if theme.iun_canvas_nest %}
-<script type="text/javascript"
-  color={{ canvas_nest.color }}
-  opacity={{ canvas_nest.opacity }}
-  zIndex={{ canvas_nest.zIndex }}
-  count={{ canvas_nest.count }}
-  src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
-</html>
