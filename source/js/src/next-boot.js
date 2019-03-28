@@ -1,6 +1,6 @@
 /* global NexT, CONFIG */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   $(document).trigger('bootstrap:before');
 
@@ -16,14 +16,14 @@ $(document).ready(function() {
   CONFIG.back2top && NexT.utils.registerBackToTop();
 
   // Mobile top menu bar.
-  $('.site-nav-toggle button').on('click', function() {
+  $('.site-nav-toggle button').on('click', function () {
     var $siteNav = $('.site-nav');
     var ON_CLASS_NAME = 'site-nav-on';
     var isSiteNavOn = $siteNav.hasClass(ON_CLASS_NAME);
     var animateAction = isSiteNavOn ? 'slideUp' : 'slideDown';
     var animateCallback = isSiteNavOn ? 'removeClass' : 'addClass';
 
-    $siteNav.stop()[animateAction]('fast', function() {
+    $siteNav.stop()[animateAction]('fast', function () {
       $siteNav[animateCallback](ON_CLASS_NAME);
     });
   });
@@ -38,11 +38,12 @@ $(document).ready(function() {
   NexT.utils.embeddedVideoTransformer();
 
   // Define Motion Sequence.
-  NexT.motion.integrator
-    .add(NexT.motion.middleWares.logo)
-    .add(NexT.motion.middleWares.menu)
-    .add(NexT.motion.middleWares.postList)
-    .add(NexT.motion.middleWares.sidebar);
+  CONFIG.motion.enable &&
+    NexT.motion.integrator
+      .add(NexT.motion.middleWares.logo)
+      .add(NexT.motion.middleWares.menu)
+      .add(NexT.motion.middleWares.postList)
+      .add(NexT.motion.middleWares.sidebar);
 
   $(document).trigger('motion:before');
 

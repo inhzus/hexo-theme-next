@@ -168,10 +168,10 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -474,7 +474,7 @@ math:
   per_page: true
   show_index: false
   engine: mathjax
-  #engine: katex
+  # engine: katex
 
   # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
   mathjax:
@@ -513,7 +513,7 @@ pangu: false
 # Dependencies: https://github.com/theme-next/theme-next-quicklink
 # Visit https://github.com/GoogleChromeLabs/quicklink for details
 quicklink:
-  enable: true
+  enable: false
 
   # Quicklink (quicklink.umd.js script) is loaded on demand
   # Add `quicklink: true` in Front Matter of the page or post you need
@@ -551,10 +551,10 @@ quicklink:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: iun
   count: false
-  lazyload: true
+  lazyload: false
 
 # Changyan
 changyan:
@@ -764,7 +764,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: enable
+  enable: false
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -779,7 +779,7 @@ busuanzi_count:
 #tencent_mta:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: true
+baidu_push: false
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
@@ -896,7 +896,7 @@ mermaid:
 
 # Use velocity to animate everything.
 motion:
-  enable: true
+  enable: false
   async: true
   transition:
     # Transition variants:
@@ -984,9 +984,9 @@ vendors:
 
   # Internal version: 2.1.3
   # Example:
-  jquery: //cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js
+  # jquery: //cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js
   # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
-  # jquery:
+  jquery:
 
   # Internal version: 2.1.5 & 3.5.6
   # See: https://fancyapps.com/fancybox
@@ -1008,21 +1008,21 @@ vendors:
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
   # Example:
-  lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js
+  # lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js
   # lazyload: //cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js
-  # lazyload:
+  lazyload:
 
   # Internal version: 1.2.1
   # See: http://velocityjs.org
   # Example:
-  velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
+  # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
   # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
-  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
+  # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
   # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
   # velocity: //cdn.bootcss.com/velocity/1.2.1/velocity.min.js
   # velocity_ui: //cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js
-  # velocity:
-  # velocity_ui:
+  velocity:
+  velocity_ui:
 
   # Internal version: 4.6.2
   # See: https://fontawesome.com
@@ -1092,8 +1092,8 @@ vendors:
   # Internal version: 1.0.0
   # See: https://github.com/GoogleChromeLabs/quicklink
   # Example:
-  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  # quicklink:
+  # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
+  quicklink:
 
   # Internal version: 1.0.0
   # See: https://github.com/revir/need-more-share2
@@ -1124,9 +1124,9 @@ vendors:
   # valine
   # See: https://github.com/xCss/Valine
   # Example:
-  valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
+  # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
   # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  # valine:
+  valine:
 
   # gitalk & js-md5
   # See: https://github.com/gitalk/gitalk, https://github.com/emn178/js-md5
@@ -1145,6 +1145,15 @@ vendors:
   # likely_css: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css
   likely_js:
   likely_css:
+
+  # See: https://www.google.com/adsense
+  # Example:
+  # google_adsense: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  google_adsense:
+
+  # busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  busuanzi:
+
 
 # Assets
 css: css

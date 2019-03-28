@@ -1,6 +1,10 @@
 {% if theme.busuanzi_count.enable %}
 <div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  {% set busuanzi_url = url_for(theme.vendors._internal + '/busuanzi.pure.mini.js') %}
+  {% if theme.vendors.busuanzi %}
+    {% set busuanzi_url = theme.vendors.busuanzi %}
+  {% endif %}
+  <script async src= {{ busuanzi_url }}></script>
 
   {% if theme.busuanzi_count.total_visitors %}
     <span class="post-meta-item-icon">
