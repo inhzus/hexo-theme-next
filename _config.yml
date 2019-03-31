@@ -670,8 +670,8 @@ needmoreshare2:
 # Google Adsense
 # See: https://www.google.com/adsense
 google_adsense:
-  google_ad_client: ca-pub-3069366247624911
-  enable_page_level_ads: true
+  google_ad_client:  # ca-pub-3069366247624911
+  enable_page_level_ads:  # true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters
