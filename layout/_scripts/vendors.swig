@@ -23,7 +23,7 @@
 {% endif %}
 
 {% if theme.fancybox %}
-  {% set js_vendors.fancybox = 'fancybox/source/jquery.fancybox.pack.js?v=2.1.5' %}
+  {% set js_vendors.fancybox = 'fancybox/source/jquery.fancybox.pack.js' %}
 {% endif %}
 
 {% if theme.canvas_nest.enable %}
