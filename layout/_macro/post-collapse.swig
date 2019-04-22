@@ -9,7 +9,11 @@
           {% set postText = post.title or post.link %}
           {{ next_url(post.link, postText + postTitleIcon, {class: 'post-title-link post-title-link-external', itemprop: 'url' }) }}
         {% else %}
+          {% if not post.hide %}
           <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">
+          {% else %}
+          <a class="post-title-link">
+          {% endif %}
             {% if post.type === 'picture' %}
               {{ post.content }}
             {% else %}

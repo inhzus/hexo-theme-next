@@ -15,6 +15,9 @@
     <div id="posts" class="posts-collapse">
       <span class="archive-move-on"></span>
 
+      <span class="archive-page-counter">
+      Some posts can't be clicked 'cuz they're private or not finished.
+      </span>
       {% if theme.cheers %}
       <span class="archive-page-counter">
         {% set cheers %}
@@ -44,9 +47,7 @@
           </div>
         {% endif %}
         {# endshow #}
-
         {{ post_template.render(post) }}
-
       {% endfor %}
 
     </div>
