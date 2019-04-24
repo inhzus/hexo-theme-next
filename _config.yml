@@ -220,6 +220,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
+  zsuun.com: https://www.zsuun.com
   #Title: http://example.com
 
 # Sidebar Avatar
