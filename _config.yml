@@ -77,7 +77,7 @@ footer:
     version: true
 
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
-  # http://www.miitbeian.gov.cn
+  # http://www.beian.miit.gov.cn
   beian:
     enable: false
     icp:
@@ -427,7 +427,7 @@ tagcloud:
   max: 30 # max font size in px
   start: "#ccc" # start color (hex, rgba, hsla or color keywords)
   end: "#111" # end color (hex, rgba, hsla or color keywords)
-  amount: 200 # amount of tags, chage it if you have more than 200 tags
+  amount: 200 # amount of tags, change it if you have more than 200 tags
 
 
 # ---------------------------------------------------------------
@@ -858,7 +858,7 @@ busuanzi_count:
 # ---------------------------------------------------------------
 
 # Algolia Search
-# See: https://github.com/theme-next/hexo-theme-next/blob/master/docs/ALGOLIA-SEARCH.md
+# See: https://theme-next.org/docs/third-party-services/search-services#Algolia-Search
 # Dependencies: https://github.com/theme-next/theme-next-algolia-instant-search
 algolia_search:
   enable: false
