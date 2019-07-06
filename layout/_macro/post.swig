@@ -265,6 +265,10 @@
     {#################}
     {### POST BODY ###}
     {#################}
+
+    {% if post.hide %}
+    Post cannot been viewed 'cuz they're private or not finished.
+    {% else %}
     <div class="post-body{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
 
       {# Gallery support #}
@@ -334,6 +338,7 @@
 
     {% if theme.related_posts.enable and (theme.related_posts.display_in_home or not is_index) %}
       {% include '../_partials/post/post-related.swig' with { post: post } %}
+    {% endif %}
     {% endif %}
 
     {#####################}
